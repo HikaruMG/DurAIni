@@ -1,5 +1,3 @@
-Here's your guide for setting up and deploying your YOLO API, formatted for a GitHub repository's `README.md` file:
-
 -----
 
 # LineBOT : YOLO Object Detection API Setup and Deployment Guide
@@ -7,7 +5,6 @@ Here's your guide for setting up and deploying your YOLO API, formatted for a Gi
 This guide will walk you through setting up your YOLO Object Detection API, running it locally, and deploying it to Heroku.
 
 -----
-
 ## 1\. Local Setup
 
 ### 1.1. Create and Activate Virtual Environment
