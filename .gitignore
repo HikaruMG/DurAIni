@@ -136,3 +136,5 @@ ngrok.exe
 mybest.pt
 /Model
 MainCode-Heroku/yolov5s.pt
+MainCode-Heroku/leaf_(yolov5x).pt
+MainCode-Heroku/leafdata_s.pt
