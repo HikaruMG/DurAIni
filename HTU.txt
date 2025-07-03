@@ -1,0 +1,33 @@
+1. Create virtual environment
+- pip install virtualenv
+- virtualenv yolo-api-venv
+
+2. Activate virtual environment
+- cd yolo-api-venv\Scripts\activate.bat [เริ่มต้นจาก run venv เสมอ]
+
+3. Install requirements
+- pip install -r requirements.txt [ลงไฟล์ libs ทั้งหมดที่ใช้] **ไฟล์อยู่ใน MainCode-Heroku
+*- pip freeze > requirements.txt [บันทึก libs ที่โหลดทั้งหมด ***สำคัญห้ามลบโดยที่ยังไม่ Backup ไว้]
+*- pip uninstall -r requirements.txt -y [ถ้าจะ deploy ขึ้น Cloud ให้ลบทั้งหมดก่อน]
+
+4. Edit ไฟล์ Ex_env.txt
+- .\FireBase\functions -> แก้ไขไฟล์ Ex_env.txt เป็น .env 
+- .\MainCode-Heroku -> แก้ไขไฟล์ Ex_env.txt เป็น .env
+
+5. Run Object Detection API
+- py line-yolo-api.py
+
+6. Run FireBase Functions
+- firebase emulators:start --only functions [Test Firebase]
+- firebase deploy --only functions [Deploy function]
+
+Ex.1 Deploy on Cloud
+
+1.1 Create Docker container
+
+1.2 Deploy on Heroku
+- heroku login
+- heroku container:login
+- activate ก่อน > cd เข้าไฟล์ > heroku container:push web -a ชื่อคอนเทน
+- heroku container:release web -a ชื่อคอนเทน
+
