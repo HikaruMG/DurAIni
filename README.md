@@ -5,6 +5,8 @@
 This guide will walk you through setting up your YOLO Object Detection API, running it locally, and deploying it to Heroku.
 
 -----
+##WorkFlow
+![image](https://github.com/user-attachments/assets/2ba74493-4d14-4f54-b7cc-b585e8e58aa6)
 
 ## 1\. Local Setup
 
