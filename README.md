@@ -1,5 +1,3 @@
-Here's your guide for setting up and deploying your YOLO API, formatted for a GitHub repository's `README.md` file:
-
 -----
 
 # LineBOT : YOLO Object Detection API Setup and Deployment Guide
